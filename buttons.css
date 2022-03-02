@@ -1,0 +1,74 @@
+button[type="button"].blog-wrapper--button {
+  margin: 0 0 0 22vw;
+  background: transparent;
+  border: none;
+  color: #e0b595;
+  font-size: 1vw;
+  z-index: 1;
+  position: relative;
+  width: 6vw;
+  height: 2vw;
+  display: block;
+  transition: all 0.2s ease;
+}
+
+button[type="button"].blog-wrapper--button:hover {
+  width: 6.5vw;
+}
+
+button[type="button"].blog-wrapper--button::after {
+  content: ">";
+  top: 0.5vw;
+  right: 0.1vw;
+  color: transparent;
+  font-size: 1vw;
+  position: absolute;
+  transition: all 0.2s ease;
+}
+
+button[type="button"]:hover::after {
+  color: #e0b595;
+}
+
+button[type="button"]::before {
+  content: "Read more";
+  top: 0.5vw;
+  left: 0.6vw;
+  position: absolute;
+  font-size: 1vw;
+  transition: all 0.2s ease;
+  color: #e0b595;
+}
+
+.blog-wrapper--button:hover,
+.btn:hover {
+  cursor: pointer;
+}
+
+.btn {
+  border: none;
+  background-image: linear-gradient(to right, #f3cdb0 0%, #e0b696 100%);
+  color: #fff;
+  width: 9vw;
+  height: 3vw;
+  border-radius: 0.3vw;
+  font-size: 1.2vw;
+  box-shadow: 0.2vw 0.2vw 0.3vw #beb0a6;
+  font-family: inherit;
+  font-weight: 300;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
+
+button[type="submit"] {
+  font-weight: 300;
+}
+
+.footer-wrapper--button {
+  position: absolute;
+  right: 6vw;
+  bottom: 0;
+}

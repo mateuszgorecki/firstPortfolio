@@ -1,0 +1,32 @@
+@media only screen and (max-width: 427px) {
+  .btn {
+    width: 40vw;
+    height: 12vw;
+    border-radius: 1vw;
+    font-size: 5vw;
+    box-shadow: 1vw 1vw 1vw #beb0a6;
+  }
+
+
+  button[type="button"].blog-wrapper--button {
+    width: 40vw;
+    height: 12vw;
+    z-index: 0;
+}
+
+  button[type="button"]::before {
+    top: 2vw;
+    left: 1vw;
+    font-size: 7vw;
+}
+
+button[type="button"].blog-wrapper--button::after {
+  top: 2vw;
+  right: 0vw;
+  font-size: 8vw;
+}
+
+button[type="button"].blog-wrapper--button:hover {
+  width: 42vw;
+}
+}
